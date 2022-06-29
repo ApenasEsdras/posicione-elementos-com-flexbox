@@ -7,3 +7,71 @@
 .cabecalhoPrincipal-nav {
     display: flex;
 }
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    /* serve para alinhar dois elementos */
+
+    justify-content: space-between;
+    /*ajusta o espaço entre os elementos, colocando ele ao meio*/
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*ajusta o espaço envolta de todos os elementos*/
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+    /* alinha os filhos, imput qunto o bottom. dando a mesmo configuração de tamanho entre todos*/
+
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+
+    /* flex-direction: column;
+     direção da quebra em coluna 
+    flex-wrap: wrap;
+    quebra de linha  */
+
+    flex-flow: column wrap;
+    /* Junção do dois comandos anteriores */
+
+
+    height: 255px;
+}
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+
+    /* Essa tag possuia os objetos com taamnho de 0% ou 0$ oq ocasionava a jução dos itens. com o  width: 20%; na teg filha ja deu pra resolver */
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin: 1%;
+}
+
+/* <========================================> */
+
+/* retirar as margisn que  */
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-right: 0;
+
+}
