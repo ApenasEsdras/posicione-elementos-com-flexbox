@@ -21,6 +21,27 @@ O display flex pode ser um pouco mais complicado de usar tendo em vista que exis
 Agora que já tivemos essa introdução, vamos logo começar a organizar nosso site com flex (;
 
 
+##################################################
+
+Sabemos que a propriedade justify-content: space-between faz com que o espaço que sobrou no nosso elemento pai seja distribuído entre os filhos, porém é claro que esse não é o único valor da propriedade justify-content. Por exemplo, de que outras formas podemos distribuir esse espaço?
+
+Qual o valor da propriedade justify-content para essas distribuições de espaço?
+
+VER OPINIÃO DO INSTRUTOR
+Opinião do instrutor
+
+Podemos distribuir os elementos dentro do pai de diversas formas, podemos por exemplo:
+
+Colocar todo espaço à esquerda, jogando o conteúdo para direita com justify-content: flex-end.
+
+Colocar todo espaço à direita, jogando o conteúdo para esquerda com justify-content: flex-start (que é o padrão).
+
+Colocar todo espaço à esquerda e à direita, jogando o conteúdo para o meio com justify-content: center.
+
+Colocar todo espaço entre os elementos como vimos antes usando justify-content: space-between.
+
+E uma possibilidade bem interessante também é colocar o espaço em volta dos elementos. Podemos usar o justify-content: space-around para isso.
+
 
 
 
