@@ -8,6 +8,8 @@
     display: flex;
 }
 
+/* <=============== footer=====================> */
+
 .rodapePrincipal-patrocinadores .container {
     display: flex;
     /* serve para alinhar dois elementos */
@@ -50,6 +52,8 @@
     height: 255px;
 }
 
+/* <======================= main ======================> */
+
 .conteudoPrincipal-cursos {
     display: flex;
     flex-wrap: wrap;
@@ -62,9 +66,9 @@
     margin: 1%;
 }
 
-/* <========================================> */
+/* <================== Main config ======================> */
 
-/* retirar as margisn que  */
+/* retirar as margisn que dos objetso das extremidadeses. */
 
 .conteudoPrincipal-cursos-link:nth-child(4n) {
     margin-right: 0;
@@ -73,5 +77,99 @@
 
 .conteudoPrincipal-cursos-link:nth-child(4n+1) {
     margin-right: 0;
+
+}
+
+/* <============ Parte do video ===========> */
+
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    /* Alinhar o texto ao centro */
+    display: flex;
+    /* Colocar os itens um ao lado do outro */
+    flex-direction: column;
+    /* colocar os itens que foram alinhadas, um embaio do outro */
+    flex-grow: 2;
+    /* Fundir o espaço restante com o elemento */
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+.videoSobre-video {
+    flex-grow: 1;
+    flex-shrink: 3;
+    /* reduz o tamaho do video em duas vezes mais q a lista */
+
+}
+
+
+
+/* <================= MOBILE ==================> */
+
+@media(max-width: 768px) {
+
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        /*alinhamento inicial */
+        text-align: center;
+    }
+
+    .conteudoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+
+        /* define o tamaho de 100% no moblie */
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        margin: 0;
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;
+
+        /* auterar ordem de detrerminado iten dentro do flexbox Container */
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+
+    .videoSobre-sobre {
+        margin: 0 auto;
+    }
 
 }
